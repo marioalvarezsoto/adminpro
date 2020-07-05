@@ -9,10 +9,6 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-    imports: [
-        RouterModule,
-        CommonModule
-    ],
     declarations: [
         BreadcrumbsComponent,
         HeaderComponent,
@@ -24,6 +20,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
         HeaderComponent,
         NopagefoundComponent,
         SidebarComponent
-    ]
-})
+    ],
+    imports: [
+        RouterModule,
+        CommonModule
+    ],
+    })
 export class SharedModule { }
